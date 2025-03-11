@@ -1,11 +1,16 @@
 #define TRIG 13
 #define ECHO 12
 
+int led_r = 7;
+int led_g = 8;
+
 void setup()
 {
   Serial.begin(9600);
   pinMode(TRIG, OUTPUT);
   pinMode(ECHO, INPUT);
+  pinMode(led_r, OUTPUT);
+  pinMode(led_g, OUTPUT);
 }
 
 void loop()
@@ -26,5 +31,14 @@ void loop()
   Serial.print(distance);
   Serial.println(" Cm");
   
+  if (distance >= 100)
+  {
+    digitalWrite(led_r, HIGH);
+    digitalWrite(led_g, LOW);
+  }else
+  {
+    digitalWrite(led_g, HIGH);
+    digitalWrite(led_r, LOW);
+  }
   delay(1000);
 }

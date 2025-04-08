@@ -100,4 +100,4 @@ void loop()
   delay(1000);                           // 1초 간격으로 반복
 }
 ```
-![초음파 센서 개념도](https://www.tinkercad.com/things/hXwJfa2Carq-surprising-kieran)
+![초음파 센서 개념도](https://github.com/ksh4043/2025IoTProgramming/blob/main/week01/Surprising%20Kieran.png)

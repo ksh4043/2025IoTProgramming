@@ -78,4 +78,4 @@ void loop()
 }
 ```
 
-![LCD 회로도](Dazzling Juttuli.png)
+![LCD 회로도](../Dazzling Juttuli.png)

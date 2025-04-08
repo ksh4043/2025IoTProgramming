@@ -78,4 +78,4 @@ void loop()
 }
 ```
 
-![LCD 회로도](Dazzling Juttuli.png)
+![LCD 회로도](https://github.com/ksh4043/2025IoTProgramming/blob/main/week03/Dazzling%20Juttuli.png)

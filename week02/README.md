@@ -2,7 +2,7 @@
 
 ## 프로젝트 개요
 
-- **센서**: Sharp GP2Y1010AU0F 먼지 센서
+- **센서**: Sharp 미세 먼지 센서
 - **MCU**: Arduino
 - **데이터 저장**: InfluxDB
 - **중간 처리**: Python (Serial 통신 → InfluxDB)

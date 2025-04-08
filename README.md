@@ -78,4 +78,4 @@ void loop()
 }
 ```
 
-![LCD 회로도](https://www.tinkercad.com/things/iYvgMcw3SqD-dazzling-juttuli)
+![LCD 회로도](Dazzling Juttuli.png)

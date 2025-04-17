@@ -92,52 +92,52 @@ IoT의 요소
 6. 배열과 문자 처리
 
 배열
-
+```
 int arr[5] = {1, 2, 3, 4, 5};
 for (int i = 0; i < 5; i++) {
   Serial.println(arr[i]);
 }
-
+```
 char와 ASCII
-
+```
 char letter = 'A';
 Serial.println((int)letter); // ASCII 출력
-
+```
 String 클래스
-
+```
 String s = "Hello";
 Serial.println(s.length());
 Serial.println(s.substring(1, 3));
-
+```
 7. 조건문과 반복문
 
 조건문
-
+```
 if (x > 10) {
   Serial.println("x is greater than 10");
 } else {
   Serial.println("x is 10 or less");
 }
-
+```
 반복문
-
+```
 while (true) {
   // loop forever
   break;
 }
-
+```
 타이머 사용 예시
-
+```
 unsigned long now = millis();
 if (now - lastTime > 1000) {
   lastTime = now;
   // 1초마다 실행
 }
-
+```
 8. 함수와 클래스
 
 함수 정의 및 호출
-
+```
 int add(int a, int b) {
   return a + b;
 }
@@ -145,9 +145,9 @@ int add(int a, int b) {
 void setup() {
   Serial.println(add(3, 4));
 }
-
+```
 클래스 예시
-
+```
 class LED {
   public:
     LED(int pin);
@@ -157,7 +157,21 @@ class LED {
   private:
     int _pin;
 };
-
+```
 9. 시리얼 통신
 
 기본 함수
+```
+void setup() {
+  Serial.begin(9600);
+  Serial.println("Start");
+}
+
+void loop() {
+  if (Serial.available() > 0) {
+    char c = Serial.read();
+    Serial.print("You typed: ");
+    Serial.println(c);
+  }
+}
+```
